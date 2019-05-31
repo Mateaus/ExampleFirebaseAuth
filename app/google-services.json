@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "37247337985",
+    "firebase_url": "https://mvvm-practice.firebaseio.com",
+    "project_id": "mvvm-practice",
+    "storage_bucket": "mvvm-practice.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:37247337985:android:098388a432cf4b3b",
+        "android_client_info": {
+          "package_name": "com.example.firebaseexample"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "37247337985-eabhjqoimsoeh529j0t34op862hjfi5p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyARk0_ynMeFqRPnUlk5shxzv3sNbc3XV28"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "37247337985-eabhjqoimsoeh529j0t34op862hjfi5p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
