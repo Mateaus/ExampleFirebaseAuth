@@ -61,7 +61,7 @@ public class LoginFragment extends Fragment {
                 if (authResponse != null) {
                     if (authResponse.getAuthenticated()) {
                         MainActivity mainActivity = (MainActivity) getActivity();
-                        mainActivity.loadContentFragment();
+                        mainActivity.loadContentActivity();
                     } else {
                         showError(authResponse.getResponseMessage());
                     }

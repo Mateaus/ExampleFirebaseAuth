@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
     /**
      * Loads the content activity.
      */
-    public void loadContentFragment() {
+    public void loadContentActivity() {
         Intent contentActivity = new Intent(this, ContentActivity.class);
         startActivity(contentActivity);
     }
