@@ -1,4 +1,4 @@
-package com.example.firebaseexample.login.model;
+package com.example.firebaseexample.login.entity;
 
 public class AuthResponse {
 

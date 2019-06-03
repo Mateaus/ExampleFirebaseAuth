@@ -44,8 +44,8 @@ public class ContentActivity extends AppCompatActivity {
      */
     @OnClick(R.id.logoutBtn)
     public void logout() {
-        Intent loginActivity = new Intent(this, MainActivity.class);
+        Intent loginActivity = new Intent(ContentActivity.this, MainActivity.class);
         startActivity(loginActivity);
-        firebaseAuth.signOut(); // We sign out from Firebase.
+        firebaseAuth.signOut();
     }
 }

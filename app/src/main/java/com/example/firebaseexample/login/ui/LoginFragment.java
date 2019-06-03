@@ -17,7 +17,7 @@ import androidx.lifecycle.ViewModelProviders;
 import com.example.firebaseexample.MainActivity;
 import com.example.firebaseexample.R;
 import com.example.firebaseexample.login.LoginViewModel;
-import com.example.firebaseexample.login.model.AuthResponse;
+import com.example.firebaseexample.login.entity.AuthResponse;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -94,7 +94,7 @@ public class LoginFragment extends Fragment {
 
     @OnClick(R.id.loginBtn)
     public void loginButtonHandler() {
-        loginViewModel.handleLogin(
+        loginViewModel.requestAuthentication(
                 emailET.getText().toString(), passwordET.getText().toString());
     }
 

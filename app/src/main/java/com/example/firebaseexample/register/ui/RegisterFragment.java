@@ -15,7 +15,7 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
 import com.example.firebaseexample.R;
-import com.example.firebaseexample.login.model.AuthResponse;
+import com.example.firebaseexample.login.entity.AuthResponse;
 import com.example.firebaseexample.register.RegisterViewModel;
 
 import butterknife.BindView;
@@ -93,7 +93,7 @@ public class RegisterFragment extends Fragment {
 
     @OnClick(R.id.registerBtn)
     public void registerButtonHandler() {
-        registerViewModel.handleRegistration(
+        registerViewModel.requestRegistration(
                 emailET.getText().toString(), passwordET.getText().toString());
     }
 
