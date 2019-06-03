@@ -1,14 +1,15 @@
 package com.example.firebaseexample;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 
-import com.example.firebaseexample.content.ContentFragment;
-import com.example.firebaseexample.login.LoginFragment;
-import com.example.firebaseexample.register.RegisterFragment;
+import com.example.firebaseexample.content.ContentActivity;
+import com.example.firebaseexample.login.ui.LoginFragment;
+import com.example.firebaseexample.register.ui.RegisterFragment;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -40,15 +41,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * Loads the content fragment.
+     * Loads the content activity.
      */
     public void loadContentFragment() {
-        ContentFragment contentFragment = new ContentFragment();
-
-        fragmentManager.beginTransaction()
-                .replace(R.id.fragment_container, contentFragment)
-                .addToBackStack(null)
-                .commit();
+        Intent contentActivity = new Intent(this, ContentActivity.class);
+        startActivity(contentActivity);
     }
 
     /**
